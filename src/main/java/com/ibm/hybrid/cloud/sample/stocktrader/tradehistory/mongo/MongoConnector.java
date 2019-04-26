@@ -108,7 +108,7 @@ public class MongoConnector {
     public MongoConnector(MongoClient mClient, String mongoDatabase, String mongoCollection) {
         mongoClient = mClient;
         database = mongoClient.getDatabase( mongoDatabase );
-        database.createCollection(mongoCollection);
+        //database.getCollection(mongoCollection);
         tradesCollection = database.getCollection(mongoCollection);
     }
 
